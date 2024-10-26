@@ -1,0 +1,14 @@
+package web
+
+import "github.com/axzilla/goilerplate/pkg/components"
+
+templ HelloForm() {
+	@Base() {
+		<div>
+			<h1 class="text-3xl">Hello World</h1>
+			<div>
+				@components.Button(components.ButtonProps{Text: "Click me"})
+			</div>
+		</div>
+	}
+}
